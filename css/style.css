@@ -1,8 +1,38 @@
-<html>
-  <head>
-    <title></title>
-    <meta content="">
-    <style></style>
-  </head>
-  <body></body>
-</html>
+body {
+  font-family: Montserrat;
+}
+.container {
+  display: grid;
+  max-width: 1752px;
+  grid-column: 100px;
+  grid-row: 100px;
+}
+div {
+  outline: 1px solid black;
+}
+/*.poster{
+  width: 100%;
+  height: 640px;
+  background-image: url(../img/Layer_10.jpg);
+}*/
+.header {
+  grid-area: header;
+}
+.poster {
+  grid-area: poster;
+}
+.quality {
+  grid-area: quality;
+}
+.whyUs {
+  grid-area: whyUs;
+}
+.garanties {
+  grid-area: garanties;
+}
+.information {
+  grid-area: information;
+}
+.galery {
+  grid-area: galery;
+}
