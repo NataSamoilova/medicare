@@ -1,53 +1,36 @@
-body{
+body {
   font-family: Montserrat;
 }
-.container{
+
+.container {
   display: grid;
-  max-width: 1752px;
-  grid-column: 100px;
-  grid-row: 100px;
+  max-width: 1600px;
+  grid-template-rows: repeat(7, auto);
+
+  div {
+    outline: 1px solid rgb(179, 190, 183);
+  }
 }
-div{
-  outline: 1px solid black;
-}
-
-.container{
-  header
-  poster
-  quality
-}
-
-
-/*.poster{
-  width: 100%;
-  height: 640px;
-  background-image: url(../img/Layer_10.jpg);
-}*/
-
-.header{
-  grid-area: header;
-}
-
 .poster{
-  grid-area: poster;
+  
+  height: 640px;
+  background: url(../img/poster.jpg);
 }
-
-.quality{
-  grid-area: quality;
-}
-
 .whyUs{
-  grid-area: whyUs;
+  
+  height: 856px;
+  background: url(../img/Layer_2.png) no-repeat center bottom;
 }
 
 .garanties{
-  grid-area: garanties;
-}
-
-.information{
-  grid-area: information;
+  
+  height: 592px;
+  background-color:#01587e;
+  background-image: url(../img/Layer_9.png);
 }
 
 .galery{
-  grid-area: galery;
+  height: 826px;
+  background-color:#30b39c;
+  background-image: url(../img/Layer_3.png);
 }
