@@ -11,12 +11,14 @@ body h1 {
   font-weight: 700;
   margin-bottom: 40px;
 }
+.block {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 .gallery {
   background-color: #30b39c;
   background-image: url(../img/Layer_3.png);
   min-height: 826px;
-  margin: 0 auto;
-  max-width: 1600px;
   color: #fff;
 }
 .wrap {
@@ -83,5 +85,43 @@ body h1 {
   }
   .gallery .pictures {
     grid-template-columns: auto;
+  }
+}
+.button {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #5a94d6;
+  border-radius: 35px;
+}
+.button:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+.consultation {
+  display: grid;
+  text-align: center;
+  padding: 50px;
+  background-color: #ccc;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  align-items: center;
+  grid-template-areas: "slogan slogan slogan button";
+}
+.consultation h2 {
+  font-weight: bold;
+  margin: 0;
+  grid-area: slogan;
+}
+.consultation .button {
+  grid-area: button;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+}
+@media (max-width: 479px) {
+  .consultation {
+    grid-template-columns: auto;
+    grid-template-areas: "slogan" "button";
   }
 }

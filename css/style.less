@@ -1,3 +1,5 @@
+@max-width: 1600px;
+
 body {
 
   p {
@@ -16,12 +18,15 @@ body {
   }
 }
 
+.block {
+  max-width: @max-width;
+  margin: 0 auto;
+}
+
 .gallery {
   background-color: #30b39c;
   background-image: url(../img/Layer_3.png);
   min-height: 826px;
-  margin: 0 auto;
-  max-width: 1600px;
   color: #fff;
 }
 
@@ -54,21 +59,25 @@ body {
     grid-gap: 30px;
 
     .member {
-      p{
+      p {
         margin-top: 10px;
         margin-bottom: 0;
-         a:first-child{
+
+        a:first-child {
           margin-right: 5px;
         }
       }
-      .bold{
+
+      .bold {
         font-weight: 700;
         color: rgb(95, 90, 90);
       }
-      a{
+
+      a {
         text-decoration: none;
         color: rgb(90, 148, 214);
-        i{
+
+        i {
           font-size: 20px;
         }
       }
@@ -89,8 +98,9 @@ body {
       grid-gap: 30px;
     }
   }
-  .gallery{
-    .pictures{
+
+  .gallery {
+    .pictures {
       grid-template-columns: auto auto;
       grid-gap: 30px;
     }
@@ -104,9 +114,57 @@ body {
       grid-template-columns: auto;
     }
   }
-  .gallery{
-    .pictures{
+
+  .gallery {
+    .pictures {
       grid-template-columns: auto;
     }
+  }
+}
+
+.button {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgb(90, 148, 214);
+  border-radius: 35px;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.consultation {
+  display: grid;
+  text-align: center;
+  padding: 50px;
+  background-color: #ccc;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  align-items: center;
+  grid-template-areas:
+    "slogan slogan slogan button";
+
+  h2 {
+    font-weight: bold;
+    margin: 0;
+    grid-area: slogan;
+  }
+
+  .button {
+    grid-area: button;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 479px) {
+  .consultation {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "slogan"
+      "button";
   }
 }
