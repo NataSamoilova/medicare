@@ -111,25 +111,27 @@ header a {
 }
 .slider .slider-content {
   padding-left: 7%;
-  width: 50%;
+  width: 45%;
   text-align: center;
   min-height: 600px;
-  vertical-align: middle;
 }
 .slider .slider-content h1 {
-  width: 90%;
+  width: 100%;
   color: #474747;
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 700;
-  padding-top: 10%;
+  padding-top: 20%;
 }
 .slider .slider-content p {
-  width: 90%;
+  width: 100%;
   color: #3f3f3f;
   font-family: "Open Sans";
   font-size: 17px;
   font-weight: 400;
+}
+.slider .button {
+  padding: 10px 30px;
 }
 .plus-wrapper {
   display: grid;
@@ -169,6 +171,20 @@ header a {
 }
 .pluses .cover-4 {
   background-color: #37c3a8;
+}
+.chooseUs {
+  padding: 3%;
+  text-align: center;
+}
+.chooseUs h1 {
+  color: #494949;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+.chooseUs p {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .best {
   color: #fff;
@@ -259,6 +275,9 @@ header a {
   font-weight: bold;
   background-color: #0087be;
   border-radius: 35px;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
 }
 .button:hover {
   text-decoration: none;
@@ -285,10 +304,35 @@ header a {
   height: 40px;
   line-height: 40px;
 }
+.footer {
+  padding: 3%;
+  color: white;
+  background-color: #171717;
+}
+.footer .footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.footer form input,
+.footer form textarea {
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  padding: 10px 0;
+  background-color: #171717;
+  color: white;
+}
+.footer form textarea {
+  margin-bottom: 10px;
+}
+.footer .button {
+  padding: 10px 20px;
+  margin-top: 10px;
+}
 .copyright {
   color: #615555;
   text-align: center;
-  padding: 50px;
+  padding: 2%;
   background-color: #1a1a1a;
 }
 .copyright p {
