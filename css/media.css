@@ -36,9 +36,14 @@
   }
 }
 
-@media (max-width:400px){
-  .slider-content{
-    width: 100%;
+@media (max-width:450px){
+  .slider-content {
+    width: 90%;
+  }
+  
+  .slider-content h1{
+    color: #c51212;
+    font-size: 30px;
   }
 }
 
