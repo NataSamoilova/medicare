@@ -10,52 +10,74 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Main page</title>
 </head>
 
 <body>
-  <div class="header block">
-    <ul class="headerLogoLine">
-      <li class="logo">
-        <img src="img/logo.jpg" alt="Medicare" width="210px">
-      </li>
-      <li>
+  <header class="block">
+    <div class="headerLogoLine">
+      <div>
+        <a href="#"><img src="img/logo.jpg" alt="Medicare" width="200px"></a>
+      </div>
+      <div class="flex">
         <div class="header-icons">
           <img src="img/clock.png" alt="+">
         </div>
-        <span>WORK TIME: 09:00 - 17:00
-          <br>
-          Saturday and Sunday - CLOSED
-        </span>
-      </li>
-      <li>
+        <div>
+          <p class="bold">WORK TIME: 09:00 - 17:00</p>
+          <p>Saturday and Sunday - CLOSED</p>
+        </div>
+      </div>
+      <div class="flex">
         <div class="header-icons">
           <img src="img/letter_copy.png" alt="+">
         </div>
-        <span>MAIL US
-          <br>
-          free@psdfreebies.com
-        </span>
-      </li>
-      <li>
+        <div>
+          <p class="bold">MAIL US</p>
+          <p>free@psdfreebies.com</p>
+        </div>
+      </div>
+      <div class="flex">
         <div class="header-icons">
           <img src="img/tel.png" alt="+">
         </div>
-        <span>CALL US
-          <br>+123 4567 8900
-        </span>
-      </li>
-    </ul>
-    <ul class="headerNav">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </div>
+        <div>
+          <p class="bold">CALL US</p>
+          <p>+123 4567 8900</p>
+        </div>
+      </div>
+    </div>
+    <div class="headerNav">
+      <div class="p1">
+        <ul class="headerMenu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="headerIcons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-vk"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-invision"></i></a>
+      </div>
+    </div>
+  </header>
 
+  <div class="slider block">
+    <div class="slider-content">
+        <h1>We have Best Medicare plan options for you</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error 
+          sit voluptatem accusantium doloremque laudantium.
+        </p>
+        <a href="#" class="button">READ MORE</a>
+    </div>
+  </div>
 
   <div class="pluses block">
     <div class="plus-wrapper">
@@ -234,7 +256,7 @@
           </li>
           <li>
             <img src="" alt="">
-            <span>123, Main Road, New City, 
+            <span>123, Main Road, New City,
               <br>
               My Country 123456
             </span>
