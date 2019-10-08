@@ -147,6 +147,11 @@ header {
     width: 45%;
     text-align: center;
     min-height: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 
     h1 {
       width: 100%;
@@ -155,8 +160,7 @@ header {
       font-family: "Montserrat", sans-serif;
       font-size: 48px;
       font-weight: 700;
-      padding-top: 20%;
-    }
+     }
 
     p {
       width: 100%;
@@ -168,7 +172,8 @@ header {
   }
 
   .button {
-    padding: 10px 30px;
+    /*padding: 10px 30px;*/
+    margin: 0 auto;
   }
 }
 
@@ -243,8 +248,8 @@ header {
 .best {
   color: #fff;
   background: #0a668d url(../img/Layer_9.png) center center;
-  min-height: 592px;
-  padding-top: 160px;
+  padding-top: 5%;
+  padding-bottom: 3%;
 
   .best-wrapper {
     display: grid;
@@ -384,35 +389,39 @@ header {
   }
 }
 
-.footer{
+.footer {
   padding: 3%;
   color: white;
   background-color: #171717;
-  .footer-wrapper{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
   }
 }
 
-.footer{
-  form{
-      input,textarea{
+.footer {
+  form {
+
+    input,
+    textarea {
       border: none;
       border-bottom: 1px solid #c2c2c2;
-      padding: 10px 0; 
+      padding: 10px 0;
       background-color: #171717;
       color: white;
     }
-    textarea{
-     margin-bottom: 10px;
+
+    textarea {
+      margin-bottom: 10px;
     }
   }
 }
 
 
-.footer{
-  .button{
+.footer {
+  .button {
     padding: 10px 20px;
     margin-top: 10px;
   }

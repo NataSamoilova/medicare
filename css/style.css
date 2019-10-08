@@ -112,8 +112,12 @@ header a {
 .slider .slider-content {
   padding-left: 7%;
   width: 45%;
-  text-align: center;
   min-height: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 .slider .slider-content h1 {
   width: 100%;
@@ -121,7 +125,6 @@ header a {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 700;
-  padding-top: 20%;
 }
 .slider .slider-content p {
   width: 100%;
@@ -131,7 +134,8 @@ header a {
   font-weight: 400;
 }
 .slider .button {
-  padding: 10px 30px;
+  /*padding: 10px 30px;*/
+  margin: 0 auto;
 }
 .plus-wrapper {
   display: grid;
@@ -189,8 +193,8 @@ header a {
 .best {
   color: #fff;
   background: #0a668d url(../img/Layer_9.png) center center;
-  min-height: 592px;
-  padding-top: 160px;
+  padding-top: 5%;
+  padding-bottom: 3%;
 }
 .best .best-wrapper {
   display: grid;
