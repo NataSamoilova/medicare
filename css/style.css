@@ -177,7 +177,7 @@ header a {
   background-color: #37c3a8;
 }
 .chooseUs {
-  padding: 3%;
+  padding: 3% 3% 0 3%;
   text-align: center;
 }
 .chooseUs h1 {
@@ -189,6 +189,10 @@ header a {
 .chooseUs p {
   max-width: 1000px;
   margin: 0 auto;
+}
+.chooseUs-wrapper {
+  width: 100%;
+  min-height: 783px;
 }
 .best {
   color: #fff;
