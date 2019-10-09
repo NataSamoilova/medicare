@@ -12,15 +12,3 @@
   }
 }
 
-/***** Shake *****/
-
-.shake:hover{ 
-  animation: shake 75ms infinite;
-  animation-timing-function: linear;   
-}
-
-@keyframes shake {
-  0% { transform: rotate(0.5deg); }
-  50% { transform: rotate(-0.5deg); }
-  100% { transform: rotate(0.5deg); }
-}
