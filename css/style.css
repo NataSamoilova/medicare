@@ -381,9 +381,10 @@ header a {
   background-color: #171717;
 }
 
-.footer .footer-wrapper {
+.footer-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
   justify-items: center;
 }
 
@@ -446,6 +447,28 @@ padding-bottom: 10px;
   margin-right: 10px;
   font-size: 24px;
 }
+.footer li a{
+  color: rgb(146, 141, 141);
+}
+.footer li a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.footer ul li .links-list,
+.footer ul li a{
+  display: block;
+}
+.footer ul li .links-list{
+  width: 8px;
+  height: 8px;
+  align-self: center;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.footer ul li{
+  display: flex;
+}
 
 .footer form input,
 .footer form textarea {
@@ -467,6 +490,9 @@ padding-bottom: 10px;
 .footer .button {
   padding: 10px 20px;
   margin-top: 10px;
+}
+.footer .button:active{
+  color: #3fb6c6;
 }
 
 .copyright {
