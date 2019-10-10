@@ -1,3 +1,14 @@
+.img-quality{
+  transition-duration: 1s;
+}
+
+.img-rotate:hover{
+  transition-duration: 1s;
+  transform: rotate(1turn);
+}
+
+
+
 /** Pulse **/
 
 .pulse:hover{ 
