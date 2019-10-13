@@ -1,0 +1,109 @@
+/** Rotate **/
+
+.img-quality {
+  transition-duration: 1s;
+  /*best block*/
+}
+
+.img-rotate:hover {
+  transition-duration: 1s;
+  transform: rotate(1turn);
+}
+
+.img-rotateY:hover {
+  transition-duration: 1s;
+  transform: rotateY(360deg);
+}
+
+
+/** Pulse **/
+
+.pulse:hover {
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+
+/** Transform Gallery **/
+
+.pictures .pic-cover {
+  width: 344px;
+  height: 209px;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.pictures .pic-cover img,
+.pictures .pic-cover .text{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;  
+  transition:1s;
+  backface-visibility: hidden;
+}
+
+.pictures .pic-cover .text{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #0087be;
+  border-radius: 10px;
+}
+
+.pictures .pic-cover .text{
+  transform:rotateY(180deg);
+}
+.pictures .pic-cover:hover img {
+  transform: rotateY(180deg);
+}
+.pictures .pic-cover:hover .text{
+  transform: rotateY(360deg);
+}
+
+/** Transform Members **/
+.members .cover1{
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+.members .cover1 img,
+.members .cover1 .text1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+.members .text1{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: antiquewhite;
+  border-radius: 50%;
+}
+.members .cover1:hover img{
+  transform: rotateY(180deg);
+}
+
+.members .text1:hover{
+  opacity: 1;
+}
+.members img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
