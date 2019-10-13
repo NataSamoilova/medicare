@@ -55,4 +55,31 @@ img,
 .cover:hover .text{
   transform: rotateY(360deg);
 }
-*/
+
+/** Transforn Members **/
+.members .cover1{
+  width: 280px;
+  height: 280px;
+  position: relative;
+}
+
+.members .cover1 img,
+.members .cover1 .text1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+
+.members .text1{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: antiquewhite;
+  border-radius: 50%;
+}

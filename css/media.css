@@ -130,10 +130,20 @@
   .slider .slider-content h1 {
     font-size: 30px;
   }
+
+  .best .best-wrapper {
+    grid-template-columns: auto;
+  }
+
   .footer .footer-wrapper{
     grid-template-columns: 1fr;
     justify-items: center;
   }
+
+  .footer h3{
+    text-align: center;
+  }
+
   .footer-wrapper .getInTouch{
     grid-column: 1/2;
     grid-row: 3/4;
@@ -149,5 +159,11 @@
     grid-gap: 15px;
    justify-items: start;
 
+  }
+}
+
+@media (max-width:500px){
+  .pluses .plus-wrapper {
+    grid-template-columns: auto;
   }
 }
